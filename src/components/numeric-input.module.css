@@ -6,6 +6,8 @@
   border-radius: var(--radius-md);
   height: var(--size-input);
   overflow: hidden;
+  display: none;
+
 }
 
 .wrap button span {

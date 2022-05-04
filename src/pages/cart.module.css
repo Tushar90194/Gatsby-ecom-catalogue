@@ -1,3 +1,7 @@
+.hide {
+  visibility: hidden;
+  display: none;
+}
 .title {
   font-size: var(--text-display);
   font-weight: var(--bold);
@@ -20,6 +24,7 @@
   text-transform: uppercase;
   font-size: var(--text-xs);
   padding-bottom: var(--space-2xl);
+  visibility: hidden;
 }
 
 .table tr,
@@ -43,11 +48,13 @@
 .summary {
   font-weight: var(--semibold);
   font-size: var(--text-lg);
+  visibility: hidden;
 }
 
 .grandTotal {
   font-size: var(--text-2xl);
   font-weight: var(--semibold);
+  visibility: hidden;
 }
 
 .checkoutButton {
@@ -65,6 +72,7 @@
   padding: var(--space-sm) var(--space-xl);
   width: max-content;
   transition: var(--transition);
+  display: none;
 }
 
 .checkoutButton:hover {
@@ -74,6 +82,7 @@
 /* Apply only to first of class */
 .summary td {
   padding-top: var(--space-3xl);
+  
 }
 
 .summary ~ .summary td {

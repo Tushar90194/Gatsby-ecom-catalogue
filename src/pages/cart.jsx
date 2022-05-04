@@ -19,6 +19,7 @@ import {
   emptyStateHeading,
   emptyStateLink,
   title,
+  hide,
 } from "./cart.module.css"
 
 export default function CartPage() {
@@ -34,7 +35,7 @@ export default function CartPage() {
       <div className={wrap}>
         {emptyCart ? (
           <div className={emptyStateContainer}>
-            <h1 className={emptyStateHeading}>Your cart is empty</h1>
+            <h1 className={emptyStateHeading}>Your Wishlist is empty</h1>
             <p>
               Looks like you haven’t found anything yet. We understand that
               sometimes it’s hard to choose — maybe this helps:
@@ -45,15 +46,15 @@ export default function CartPage() {
           </div>
         ) : (
           <>
-            <h1 className={title}>Your cart</h1>
+            <h1 className={title}>Your Wishlist</h1>
             <table className={table}>
               <thead>
                 <tr>
                   <th className={imageHeader}>Image</th>
                   <th className={productHeader}>Product</th>
-                  <th className={collapseColumn}>Price</th>
+                  <th className={[collapseColumn, hide]}>Price</th>
                   <th>Qty.</th>
-                  <th className={[totals, collapseColumn].join(" ")}>Total</th>
+                  <th className={[totals, collapseColumn, hide].join(" ")}>Total</th>
                 </tr>
               </thead>
               <tbody>

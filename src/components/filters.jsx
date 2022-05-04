@@ -80,7 +80,7 @@ export function Filters({
       </details>
       <hr />
       <CheckFilter
-        name="Brands"
+        name="Collection"
         items={vendors}
         selectedItems={filters.vendors}
         setSelectedItems={(value) => updateFilter("vendors", value)}
