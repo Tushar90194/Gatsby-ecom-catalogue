@@ -62,6 +62,7 @@
 
 .priceValue {
   padding: var(--space-lg) 0;
+ display: none;
 }
 
 .visuallyHidden {
