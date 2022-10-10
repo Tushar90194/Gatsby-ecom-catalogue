@@ -17,7 +17,7 @@ export function Footer() {
         <div className={logos}>
           <Logo />
         </div>
-        <strong>CLOTHING STORE NAME IDK </strong> 
+        <strong>ARTISTIC DECOR</strong> 
       
       </div>
       
