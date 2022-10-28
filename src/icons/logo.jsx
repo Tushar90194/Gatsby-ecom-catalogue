@@ -1,5 +1,5 @@
 import * as React from "react"
-import logos from "../icons/logo.png"
+import logos from "../icons/logos.png"
 function Logo(props) {
   return (
 
